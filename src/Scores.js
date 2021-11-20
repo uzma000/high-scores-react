@@ -1,4 +1,4 @@
-let allCountryScores = [
+let AllCountryScores = [
   {
     name: "Ethiopia",
     scores: [
@@ -62,4 +62,4 @@ let allCountryScores = [
   },
 ];
 
-export default allCountryScores;
+export default AllCountryScores;
