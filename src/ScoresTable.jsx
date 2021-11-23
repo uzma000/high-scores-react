@@ -20,7 +20,7 @@ const ScoresTable = (props) => {
               return (
                 <tr key={index}>
                   <td>{person.n}</td>
-                  <td>person.s</td>
+                  <td>{person.s}</td>
                 </tr>
               );
             })}
