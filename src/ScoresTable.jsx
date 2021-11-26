@@ -2,6 +2,11 @@ import React from "react";
 
 const ScoresTable = (props) => {
   const { name, scores } = props.value;
+
+  const DescendingScores = scores.sort((a, b) => {
+    return a.s < b.s ? 1 : -1;
+  });
+
   return (
     <div className="table-wrapper">
       <div>
@@ -16,7 +21,7 @@ const ScoresTable = (props) => {
             </tr>
           </thead>
           <tbody>
-            {scores.map((person, index) => {
+            {DescendingScores.map((person, index) => {
               return (
                 <tr key={index}>
                   <td>{person.n}</td>
